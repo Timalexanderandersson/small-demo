@@ -19,6 +19,7 @@ const ContactUs = () => {
           src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_URL" 
           width="100%" 
           height="100%"
+          title="Unique description for homepage iframe"
           style={{border: 0}} 
           allowFullScreen="" 
           aria-hidden="false" 

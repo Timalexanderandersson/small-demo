@@ -103,6 +103,7 @@ const HomePage = () => {
   <div className={styles.mapContainer}>
     <iframe
       src="https://www.google.com/maps/embed?pb=... [Google Maps Embed Code]"
+      title="google mappen hära"
       width="100%"
       height="100%"
       style={{ border: 0 }}
