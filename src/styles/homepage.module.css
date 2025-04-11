@@ -1,0 +1,278 @@
+/* homepage.module.css */
+
+/* Hero Section */
+.hero {
+  background-image: url('../assets/fixar.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.heroContent {
+  max-width: 80vh;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: #4b4b4b;
+  margin-bottom: 2rem;
+  max-width: 90vh;
+}
+
+.ctaButton {
+  padding: 1rem 2.5rem;
+  background-color: #23516b; /* Grön för en professionell och vänlig känsla */
+  color: white;
+  border: 2px solid #23516b;  /* Matchar bakgrundsfärgen för en ren design */
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px; /* Rundare kanter för en modern känsla */
+  transition: all 0.3s ease; /* Smidig övergång på hover */
+  text-transform: uppercase; /* Gör texten mer iögonfallande */
+}
+
+.ctaButton:hover {
+  background-color: #357296;  /* En mörkare grön för hover-effekten */
+  border-color: #5a93b4;  /* Matchar hover-bakgrundsfärgen för ett enhetligt utseende */
+  transform: translateY(-2px); /* Liten upphöjningseffekt vid hover */
+}
+
+/* Varför välja oss */
+.whyChooseUs {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.whyChooseUs h2 {
+  font-size: 2rem;
+}
+
+.reasonsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.reasonItem {
+  width: 30%;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.reasonItem:hover {
+  transform: translateY(-5px); /* Lätt upphöjningseffekt på hover */
+}
+
+.icon {
+  font-size: 2.4rem;
+  color: #23516b; /* Blå färg för ikoner */
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Tjänster vi erbjuder */
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Skapar tre kolumner */
+  gap: 2rem; /* Avstånd mellan tjänsterna */
+  max-width: 100vh;
+}
+
+.serviceItem {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 2rem;
+  height: 400px; /* Fast höjd på varje låda för att de ska vara lika stora */
+}
+
+.serviceItem:hover {
+  transform: translateY(-5px); /* Lätt upphöjningseffekt på hover */
+}
+
+.serviceItem img {
+  width: 100%;
+  height: 200px; /* Sätt en fast höjd för alla bilder */
+  object-fit: cover; /* Gör så att bilderna fyller sin container utan att bli förvrängda */
+  border-radius: 10px;
+  max-width: 35vh;
+  transition: transform 0.3s ease;
+}
+
+.serviceItem img:hover {
+  transform: scale(1.05); /* Liten zoom-effekt på hover */
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+/* Kontaktinfo */
+.contactInfo {
+  display: flex;
+  flex-wrap: wrap; /* För att hantera små skärmar */
+  justify-content: center;
+  padding: 3rem 2rem;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactDetails {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem;
+  max-width: 90vh;
+}
+
+.contactDetails h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.contactDetails p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contactDetails p strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.mapContainer {
+  flex: 1.5;
+  height: 400px;
+  background-color: #e1e1e1;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 60vh;
+}
+
+.mapContainer iframe {
+  border-radius: 10px;
+}
+
+/* Responsiv design */
+@media (max-width: 880px) {
+  .servicesContainer {
+    grid-template-columns: 1fr; /* En kolumn på små skärmar (vertikal layout) */
+  }
+
+  .serviceItem {
+    width: 90%; /* För att göra elementen lite mer centrerade */
+    margin: 0 auto 2rem auto;
+    height: auto; /* Anpassa höjden på små skärmar */
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .contactInfo {
+    flex-direction: column; /* Ställer om layouten till vertikal på små skärmar */
+  }
+
+  .contactDetails {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .mapContainer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reasonItem {
+    width: 80%; /* Full bredd på små skärmar */
+    margin: 0 auto 2rem auto;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .checkboxContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mapContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contactDetails {
+    text-align: center;
+  }
+}

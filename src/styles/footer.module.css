@@ -1,0 +1,85 @@
+/* footer.module.css */
+
+.footer {
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrerar innehållet horisontellt */
+    width: 100%;
+    gap: 3rem;
+  }
+  
+  .footerSection {
+    flex: 1;
+    min-width: 220px;
+    margin: 1rem 0;
+    text-align: center; /* Centrerar texten inom varje sektion */
+  }
+  
+  .footerSection h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .footerSection p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hrLine {
+    border: 0;
+    border-top: 1px solid #1f1f1f; /* Tjockare linje och ljusare färg för bättre kontrast */
+    
+    width: 80%; /* Gör linjen mindre än full bredd för att ge en finare look */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .kopyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Mobilanpassning */
+  @media screen and (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+      align-items: center; /* Centrera alla sektioner vertikalt */
+      text-align: center;
+    }
+  
+    .footerSection {
+      width: 100%; /* Gör varje sektion fullbredd */
+      margin-bottom: 2rem; /* Lägg till utrymme mellan sektionerna */
+    }
+  
+    .hrLine {
+      margin: 3rem 0; /* Mer utrymme ovanför linjen */
+     
+    }
+  
+    .kopyright {
+      margin-top: 3rem; /* Mer utrymme från sektionerna ovanför */
+    }
+  }
+  
