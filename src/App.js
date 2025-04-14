@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import HomePage from './pages/homepage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ContactUs from './pages/kontakt';
+import NotFound from './pages/404';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/kontakt" element={<ContactUs />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
